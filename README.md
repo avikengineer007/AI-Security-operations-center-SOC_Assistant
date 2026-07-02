@@ -38,7 +38,11 @@ soc-assistant/
 
 ## Installation
 
-1. **Clone or navigate** to the `soc-assistant` directory.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/avikengineer007/AI-Security-operations-center-SOC_Assistant.git
+   cd AI-Security-operations-center-SOC_Assistant
+   ```
 2. **Create a virtual environment and activate it**:
    ```bash
    python -m venv .venv
